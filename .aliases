@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+alias vpn="cd ~/Downloads; sudo openvpn samindia007.ovpn;"
+alias reload="source ~/.bash_profile"

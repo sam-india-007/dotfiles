@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+# Create a new directory and enter it
+function mkd() {
+	mkdir -p "$@" && cd "$_";
+}
+
+# nmap
+function nm() {
+	sudo nmap -sV -vv "$@";
+}
+
+# gobuster
+function go() {
+	gobuster dir -u "$@" -w /usr/share/wordlists/dirb/common.txt
+}
